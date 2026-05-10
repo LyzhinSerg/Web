@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="keyboard">
+        <img class="key up" alt="Вверх" id="ArrowUp" src="up.png">
+        <img class="key left" alt="Влево" id="ArrowLeft" src="left.png">
+        <img class="key down" alt="Вниз" id="ArrowDown" src="down.png">
+        <img class="key right" alt="Вправо" id="ArrowRight" src="right.png">
+    </div>
+    <div class="liveseyMovement" id="gameArea">
+        <img src="livesey.png" alt="Изображение" width="40px" id="player"
+        style="position: relative; width: 50px">
+    </div>
+
+    <div style="text-align: center;">
+    <canvas id="pongCanvas" width="600" height="400" style="border: 2px solid #525252; background: #000;"></canvas>
+    <h1 id="status" style="color: red;"></h1>
+    
+</div>
+</body>
+
+</html>

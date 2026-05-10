@@ -46,7 +46,7 @@ function pictureMovement() {
     });
 
     window.addEventListener('dragover', function (event) {
-        event.preventDefault(); // Это обязательно, чтобы drop сработал
+        event.preventDefault();
     });
 }
 

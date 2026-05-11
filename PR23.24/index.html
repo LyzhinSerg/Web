@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="welcome-screen" class="screen">
+        <h1>Добро пожаловать в Кликер!</h1>
+        
+        <div class="instructions">
+            <h3>Инструкция:</h3>
+            <p>1 Введите своё имя в поле ниже.</p>
+            <p>2 Нажмите кнопку «Играть».</p>
+            <p>3 Кликая по кнопке, набирайте как можно больше очков!</p>
+        </div>
+
+        <input type="text" id="player-name" placeholder="Введите ваше имя" autocomplete="off">
+        <button id="start-btn">Играть</button>
+    </div>
+
+    <div id="game-screen" class="screen hidden">
+
+    <div id="pause-overlay" class="hidden">
+        <div class="pause-message">ПАУЗА</div>
+    </div>
+    
+    <div class="game-header">
+        <p>Игрок: <span id="display-name">---</span></p>
+        <p>Время: <span id="timer">00:00</span></p>
+        <p>Счет: <span id="score">0</span></p>
+    </div>
+    
+    <button id="click-btn" class="main-clicker">КЛИКАЙ!</button>
+    <br>
+    <button id="exit-btn" class="exit-btn">Выход</button>
+    </div>
+
+    <div id="results-screen" class="screen hidden">
+    <h1>Таблица рекордов</h1>
+    <table id="records-table">
+        <thead>
+            <tr>
+                <th>Место</th>
+                <th>Имя</th>
+                <th>Счёт</th>
+            </tr>
+        </thead>
+        <tbody id="records-body">
+        </tbody>
+    </table>
+    </div>
+
+</body>
+</html>
